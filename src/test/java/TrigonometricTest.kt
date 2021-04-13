@@ -19,7 +19,7 @@ class TrigonometricTest {
         private val cosMock: Cos = Mockito.mock(Cos::class.java)
         private val sinMock: Sin = Mockito.mock(Sin::class.java)
         private val tanMock: Tan = Mockito.mock(Tan::class.java)
-        private val cos: Cos = PowerSeriesCos(PrintWriter(FileOutputStream("${OUT_FILES}cosResults.csv", true), true))
+        private val cos: Cos = PowerSeriesCos(/*PrintWriter(FileOutputStream("${OUT_FILES}cosResults.csv", true), true)*/)
         private val sin: Sin = SinUsingCos(cos)
         private val tan: Tan = TanUsingCosAndSin(sin, cos)
 
